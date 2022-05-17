@@ -114,9 +114,9 @@ tests:
         documentIndex: 1
       - notContains: *overrides_mnt
         documentIndex: 1 # st2api
-      - notContains: *overrides_volume # only contains if volumes.enabled
+      - notContains: *overrides_volume 
         documentIndex: 10 # st2actionrunner
-      - notContains: *overrides_mnt # only contains if volumes.enabled
+      - notContains: *overrides_mnt
         documentIndex: 10 # st2actionrunner
       - notContains: *overrides_volume
         documentIndex: 0
